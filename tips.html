@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tips Sehat - Sehat Bersama</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f1fdf4;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: #2e7d32;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    header p {
+      margin: 4px 0 0;
+      font-size: 14px;
+    }
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 6px 12px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    main {
+      flex: 1;
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h2 {
+      color: #2e7d32;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .tips-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .tip-card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      width: 260px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .tip-card h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #2e7d32;
+    }
+
+    .tip-card p {
+      font-size: 15px;
+      color: #555;
+    }
+
+    footer {
+      background: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 18px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .tips-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Sehat Bersama</h1>
+      <p>Solusi Hidup Sehat dan Bahagia</p>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="tips.html">Tips Sehat</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Tips Kesehatan Harian</h2>
+    <div class="tips-container">
+      <div class="tip-card">
+        <h3>1. Minum Air yang Cukup</h3>
+        <p>Pastikan tubuh tetap terhidrasi dengan minum minimal 8 gelas air putih setiap hari.</p>
+      </div>
+      <div class="tip-card">
+        <h3>2. Konsumsi Sayur & Buah</h3>
+        <p>Lengkapi nutrisi harian dengan aneka buah dan sayur segar penuh serat dan vitamin.</p>
+      </div>
+      <div class="tip-card">
+        <h3>3. Olahraga Teratur</h3>
+        <p>Lakukan aktivitas fisik ringan seperti jalan kaki 30 menit sehari untuk menjaga kebugaran.</p>
+      </div>
+      <div class="tip-card">
+        <h3>4. Tidur yang Berkualitas</h3>
+        <p>Usahakan tidur 7–8 jam tiap malam untuk pemulihan tubuh yang optimal.</p>
+      </div>
+      <div class="tip-card">
+        <h3>5. Kurangi Stres</h3>
+        <p>Lakukan relaksasi, meditasi, atau hobi untuk menjaga kesehatan mental.</p>
+      </div>
+      <div class="tip-card">
+        <h3>6. Batasi Gula dan Garam</h3>
+        <p>Hindari makanan tinggi gula dan garam yang berlebihan untuk mencegah penyakit kronis.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Sehat Bersama. All rights reserved.
+  </footer>
+</body>
+</html>

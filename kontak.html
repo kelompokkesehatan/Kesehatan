@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontak - Sehat Bersama</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f1fdf4;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: #2e7d32;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    header p {
+      margin: 4px 0 0;
+      font-size: 14px;
+    }
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 6px 12px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    main {
+      flex: 1;
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h2 {
+      color: #2e7d32;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin-bottom: 50px;
+    }
+
+    .info-item {
+      background: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      border-radius: 12px;
+      padding: 20px 30px;
+      width: 260px;
+      text-align: center;
+      font-size: 16px;
+      color: #444;
+      transition: transform 0.3s ease;
+    }
+    .info-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
+
+    .info-icon {
+      font-size: 40px;
+      color: #2e7d32;
+      margin-bottom: 15px;
+    }
+
+    form {
+      background: white;
+      max-width: 500px;
+      margin: auto;
+      padding: 30px 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #2e7d32;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px 12px;
+      margin-bottom: 20px;
+      border: 1.8px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+      resize: vertical;
+      transition: border-color 0.3s;
+    }
+
+    form input:focus, form textarea:focus {
+      border-color: #4caf50;
+      outline: none;
+    }
+
+    form button {
+      background-color: #2e7d32;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+      width: 100%;
+    }
+
+    form button:hover {
+      background-color: #276027;
+    }
+
+    footer {
+      background: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 18px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .contact-info {
+        flex-direction: column;
+        align-items: center;
+      }
+      .info-item {
+        width: 100%;
+        max-width: 320px;
+      }
+      form {
+        width: 100%;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Sehat Bersama</h1>
+      <p>Solusi Hidup Sehat dan Bahagia</p>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="tips.html">Tips Sehat</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Hubungi Kami</h2>
+    <form action="#" method="post" onsubmit="alert('Terima kasih sudah menghubungi kami!'); return false;">
+      <label for="name">Nama Lengkap</label>
+      <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required />
+
+      <label for="message">Pesan</label>
+      <textarea id="message" name="message" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+
+      <button type="submit">Kirim Pesan</button>
+    </form>
+  </main>
+
+  <footer>
+    &copy; 2025 Sehat Bersama. All rights reserved.
+  </footer>
+</body>
+</html>
